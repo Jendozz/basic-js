@@ -71,7 +71,7 @@ return arrfunc;
 
 function doubleNext(arrfunc, i){
   if(i != arrfunc.length - 1 && arrfunc[i+1] != null){
-    arrfunc.splice(i,1)
+    arrfunc.splice(i, 1)
     arrfunc.splice(i, 0 , arrfunc[i])
   }
   else{
@@ -81,7 +81,7 @@ function doubleNext(arrfunc, i){
 }
 
 function doublePrev(arrfunc, i){
-  if (i != arrfunc[0] && arrfunc[i-1] != null){
+  if (i != 0 && arrfunc[i-1] != null){
     arrfunc.splice(i,1)
     arrfunc.splice(i, 0, arrfunc[i-1])
   }
